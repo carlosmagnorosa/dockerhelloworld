@@ -17,7 +17,7 @@ Build the docker image
 docker build -t test/test:1.0 .
 ```
 
-Run the docker container mapping a local port on your machine (4000) to the Docker exposed port (4000)
+Run the docker container mapping a local port on your machine (4000) to the container exposed port (4000)
 ```bash
 docker run -p 4000:4000 test/test:1.0
 ```
