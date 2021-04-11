@@ -1,19 +1,25 @@
 A simple Hello World Docker Image with NodeJS
 
-# Running
+# Running without docker
 
-Run:
 ```bash
 npm install
 ```
+
+```bash
+npm start
+```
+
+# Running with docker
 
 Build the docker image
 ```bash
 docker build -t test/test:1.0 .
 ```
 
-Run the docker container mapping a local part on your machine (8080) to the NodeJS exposed port (4000)
+Run the docker container mapping a local port on your machine (4000) to the Docker exposed port (4000)
 ```bash
-docker run -p 8080:4000 test/test:1.0
+docker run -p 4000:4000 test/test:1.0
 ```
+
 
